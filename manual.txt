@@ -1,0 +1,5 @@
+creacion de enlace simbolico
+sudo ln -s 'referencia' 'nombre del acceso directo'
+sudo ln -s '/media/xavier/Volumen/xavier/pack de proyectos/shell linux' 'shell'
+----------------------------------------------------------------------------------
+

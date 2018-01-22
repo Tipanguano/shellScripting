@@ -1,0 +1,59 @@
+proceso 130.2.18.55   /procesos/gsioper/DWH/reportes_xti/suspensioRobo_diario/rrs_crea_susp_robo_diario.sh
+Hora inicio 31/07/2017 08:00:00 
+
+reporte diario 
+REPORTE: SUSPENSIONES_POR_ROBO_20170730
+
+PL/SQL procedure successfully completed.
+
+Proceso exitoso registros generados
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+Fin ejecucion 31/07/2017 08:00:23
+email enviado.

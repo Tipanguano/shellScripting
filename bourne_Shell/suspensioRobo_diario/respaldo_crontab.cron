@@ -1,0 +1,91 @@
+0 10 1 * * sh /home/gsioper/procesos/cartas/RptDatos/detalles_serv1.sh >> /home/gsioper/procesos/cartas/RptDatos/detalles_serv1_c.log
+0 10 1 * * sh /home/gsioper/procesos/cartas/RptDatos/detalles_serv2.sh >> /home/gsioper/procesos/cartas/RptDatos/detalles_serv2_c.log
+0 10 1 * * sh /home/gsioper/procesos/cartas/RptDatos/detalles_serv3.sh >> /home/gsioper/procesos/cartas/RptDatos/detalles_serv3_c.log
+0 10 1 * * sh /home/gsioper/procesos/cartas/RptDatos/detalles_serv4.sh >> /home/gsioper/procesos/cartas/RptDatos/detalles_serv4_c.log
+0 10 1 * * sh /home/gsioper/procesos/cartas/RptDatos/detalles_serv5.sh >> /home/gsioper/procesos/cartas/RptDatos/detalles_serv5_c.log
+0 10 1 * * sh /home/gsioper/procesos/cartas/RptDatos/feature_contrato.sh >> /home/gsioper/procesos/cartas/RptDatos/feature_contrato_c.log
+0 10 1 * * sh /home/gsioper/procesos/cartas/RptDatos/serv_contrat_AUTAR.sh >> /home/gsioper/procesos/cartas/RptDatos/serv_contrat_AUTAR_c.log
+0 10 1 * * sh /home/gsioper/procesos/cartas/RptDatos/serv_contrat_PPA.sh >> /home/gsioper/procesos/cartas/RptDatos/serv_contrat_PPA_c.log
+15 11 * * 1-5 sh /ora1/gsioper/Programas_Concilia/BSCS/concilia_ies_info.sh
+#30 12 * * 1-5 sh /ora1/gsioper/Programas_Concilia/BSCS/concilia_serv_info.sh
+05 11 * * * sh /ora1/gsioper/Programas_Concilia/conc_casos_backdate.sh>/ora1/gsioper/Programas_Concilia/conc_casos_backdate.log
+#07 10 * * * sh /ora1/gsioper/Programas_Concilia/conc_casos_backdate2.sh>/ora1/gsioper/Programas_Concilia/conc_casos_backdate2.log
+0 10 2 * * sh -x /home/gsioper/reportesAMX/REPORTE_PASATIEMPO.SH > /home/gsioper/reportesAMX/reporte_pasatiempo.log
+0 8 * * * sh -x /home/gsioper/portabilidad/reportes/linea_portada.sh >> /home/gsioper/portabilidad/reportes/linea_portada.log
+0 7 * * * sh -x /procesos/gsioper/patrocinados/aprovisionador.sh > /procesos/gsioper/patrocinados/aprovisionador.log
+10 5 * * * sh -x /home/gsioper/ies_promocion_best_friend.sh >> /home/gsioper/bestfriend.LOG
+15 7 * * * sh -x /home/gsioper/ies_promocion_paq_act.sh >> /home/gsioper/ies_promocion_paq_act.LOG
+30 7 * * * sh -x /home/gsioper/INFO_PARA_PRE.sh >> /home/gsioper/INFO_PARA_PRE.LOG
+#00 08 * * * sh -x /home/gsioper/reportesAMX/rtp_lineas_portadas_canalVenta.sh >>/home/gsioper/reportesAMX/linea_portada_canalVenta.log
+#0 3 * * * sh /procesos/gsioper/Programas_Concilia/conciliacion_FF_manual_new.sh
+00 08 *  * * sh -x  /home/gsioper/reportesAMX/rpt_carga_requerimiento.sh>>/home/gsioper/portabilidad/reportes/carga_requerimiento.log
+#30 08 *  * * sh -x   /home/gsioper/reportesAMX/Port_out_Resumen.sh>>/home/gsioper/portabilidad/reportes/Port_out_Resumen.log
+#30 08 *  * * sh -x  /home/gsioper/reportesAMX/Port_in_Resumen.sh>>/home/gsioper/portabilidad/reportes/Port_in_Resumen.log
+#00 08 * * * sh /home/gsioper/reportesAMX/Carga_PortadosIn.sh > /home/gsioper/reportesAMX/Carga_PortadosIn.log
+#10 08 * * * sh /home/gsioper/reportesAMX/Carga_PortadosOut.sh > /home/gsioper/reportesAMX/Carga_PortadosOut.log
+0 02 * * * sh -x /procesos/gsioper/reportesAmx/sh_reportes_amx.sh 2010 08 >>/procesos/gsioper/logs/dato_ejecucion_08.log
+00 10 15 * * sh /home/gsioper/reportesAMX/Carga_automatico.sh > /home/gsioper/reportesAMX/Carga_automatico.log
+00 10 15 * * sh -x /home/gsioper/reportesAMX/Carga_ConsumosIn.sh >>/home/gsioper/reportesAMX/Carga_ConsumosIn.log
+#30 08 * * * sh -x /home/gsioper/reportesAMX/sh_portado_canal_venta.sh >> /home/gsioper/reportesAMX/portado_canal_venta.log
+#30 08 * * * sh -x /home/gsioper/reportesAMX/sh_portado_fuerza_vta_out.sh >> /home/gsioper/reportesAMX/portado_fuerza_vta_out.log
+#30 08 * * * sh -x /home/gsioper/reportesAMX/sh_portado_promotor_in.sh >> /home/gsioper/reportesAMX/portado_promotor_in.log
+#30 08 * * * sh -x /home/gsioper/reportesAMX/sh_consumo_concentra_out.sh >> /home/gsioper/reportesAMX/consumo_concentra_out.log
+#30 08 * * * sh -x /home/gsioper/reportesAMX/sh_consumo_out.sh >> /home/gsioper/reportesAMX/consumo_out.log
+#30 08 * * * sh -x /home/gsioper/reportesAMX/sh_consumo_resumen_in.sh >> /home/gsioper/reportesAMX/consumo_resumen_in.log
+#30 08 * * * sh -x /home/gsioper/reportesAMX/sh_consumo_in.sh >> /home/gsioper/reportesAMX/consumo_in.log
+#30 08 * * * sh -x /home/gsioper/reportesAMX/sh_consumo_concentra_in.sh >> /home/gsioper/reportesAMX/consumo_concentra_in.log
+#30 08 * * * sh -x /home/gsioper/reportesAMX/sh_consumo_resumen_out.sh >> /home/gsioper/reportesAMX/consumo_resumen_out.log
+#30 08 * * * sh -x /home/gsioper/reportesAMX/sh_portado_impacto_oper.sh >> /home/gsioper/reportesAMX/portado_impacto_oper.log
+#30 08 * * * sh -x /home/gsioper/reportesAMX/sh_portado_finanza_reg.sh >> /home/gsioper/reportesAMX/portado_finanza_reg.log
+#30 08 * * * sh -x /home/gsioper/reportesAMX/sh_portado_finanza_oper.sh >> /home/gsioper/reportesAMX/portado_finanza_oper.log
+#30 08 * * * sh -x /home/gsioper/reportesAMX/sh_portado_totalizado.sh >> /home/gsioper/reportesAMX/portado_totalizado.log
+#30 08 * * * sh -x /home/gsioper/reportesAMX/sh_portado_in_out.sh >> /home/gsioper/reportesAMX/portado_in_out.log
+#00 02 * * * sh /home/gsioper/procesos/DM_SALDO_FEATURES/fuentes/sh_saldos_feature_prin.sh >> /home/gsioper/procesos/DM_SALDO_FEATURES/log/ejecucion_201011214.log
+#0,15,35,49 * * * * sh -x /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.sh PORTA
+#2,17,31,47 * * * * sh /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.sh IPORTA >> /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.log
+#4,19,33,49 * * * * sh /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.sh PICHINCHA >> /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.log
+#4,19,33,51 * * * * sh /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.sh > /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.log
+#0,15,35,10  * * * * sh /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.sh > /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.log
+#0,15,35,26  * * * * sh /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.sh > /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.log
+#0,15,35,26  * * * * sh /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.sh >> /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.log
+#2,17,31,47 * * * * sh /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.sh  >> /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.log
+#2,17,31,01 * * * * sh /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.sh  >> /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.log
+#2,17,31,08 * * * * sh /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.sh  >> /ora1/gsioper/procesos/alarmas/descompilados/alarmas.log
+#* * * * * sh /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis.sh  >> /ora1/gsioper/procesos/alarmas/descompilados/alarmas.log
+#* * * * * sh /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis1.sh  >> /ora1/gsioper/procesos/alarmas/descompilados/alarmas.log
+#* * * * * sh -x /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis1.sh  >> /ora1/gsioper/procesos/alarmas/descompilados/Lmp.log
+#* * * * * sh /ora1/gsioper/procesos/alarmas/descompilados/alarmas_monitorea_descompilados_axis99.sh > /ora1/gsioper/procesos/alarmas/descompilados/Lasseam33.log
+30 11 * * 6 sh -x /home/gsioper/reportesAMX/sh_depura_xls_prt.sh +7 >> /home/gsioper/reportesAMX/depuradorXLSPrt.log
+* * * * *  sh /procesos/gsioper/reportes_usuarios/sh_principal_principal.sh
+#0 10 1 * * sh /procesos/gsioper/reportes_usuarios/sh_generacion_rep_principal.sh
+0 10 * * * sh /procesos/gsioper/reportes_usuarios/sh_generacion_rep_principal.sh
+#0 10 * * 1 sh /procesos/gsioper/reportes_usuarios/sh_generacion_rep_principal.sh
+* * * * * sh /procesos/gsioper/reportes_usuarios/sh_principal_excep.sh
+0 5 * * 1 sh /procesos/gsioper/reportes_usuarios/sh_censa_bit_errores.sh
+10 5 1 * * sh /procesos/gsioper/reportes_usuarios/sh_censa_bit_errores.sh
+#* * * * *  sh /procesos/gsioper/DM_SALDO_FEATURES/fuentes/sh_control_tb.sh
+5,10,15,20,25,30,35,40,45,50,55 2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 * * * /procesos/gsioper/DM_SALDO_FEATURES/fuentes/sh_control_tb.sh
+10,20,30,40,50,0 * * * * /procesos/gsioper/SMSmasivosccu/smscob_envio_msje.sh /procesos/gsioper/SMSmasivosccu > /procesos/gsioper/SMSmasivosccu/smscob_envio_msje_c.log
+46 15 * * * sh -x /ora1/gsioper/procesos/ReportesTramites/conc.sh > /ora1/gsioper/procesos/ReportesTramites/conc.log
+#0,5,10,15,20,25,30,35,40,45,50,55 * * * * /procesos/gsioper/cancelaciones/principalCancelacionesAxis.sh
+02 15 * * * sh -x /procesos/gsioper/SIFI/ciclo_facturacion/fms_ciclos_facturacion.sh > /procesos/gsioper/SIFI/ciclo_facturacion/fms_ciclos_facturacion.log
+0 2,3,4,5,6,7,8,9,10,11,12 * * * sh /procesos/gsioper/GSI/Autoriza_sesion.sh 2>/dev/null
+0,15,30,45 * * * * sh /procesos/gsioper/BMC/MonColas/concilia_credito.sh > /dev/null
+#10 9 19,20,21,22,23,24,25,26 * * /procesos/gsioper/CONCILIA_INF/verifica_trln.sh > /procesos/gsioper/CONCILIA_INF/verifica_trln.log
+30 9 7,8,9 1 *  /procesos/gsioper/CONCILIA_INF/verifica_trln.sh > /procesos/gsioper/CONCILIA_INF/verifica_trln.log
+#0,15,30,45 1,2,3,4,5,6,7,8,9,10,11,12 * * 5 sh /ora1/gsioper/procesos/SIFI/qc_logs_export.sh /ora1/gsioper/procesos/SIFI/diarias/axis_diario07.ini /ora1/gsioper/procesos/SIFI/diarias/axis_sifi.txt
+30 * * * * sh /procesos/gsioper/rcc_sma_trafico/consumo_voz/rcc_smar_consumo_voz_diario.sh
+30 * * * * sh /procesos/gsioper/rcc_sma_trafico/Jar/rcc_smar_jar.sh
+3 7-20 * * 1-5 sh /ora1/gsioper/monitorea_procesos.sh "PROC_MON1" >> /ora1/gsioper/monitorea_procesos.log 2>&1
+3,33 * * * * sh /ora1/gsioper/monitorea_procesos.sh "PROC_MON" >> /ora1/gsioper/monitorea_procesos.log 2>&1
+0 5 * * 1-5 sh -x /procesos/gsioper/DWH/r_inventario_dth.sh > /procesos/gsioper/DWH/proceso_cron_inventario_dth.log
+30 8 * * 5 sh -x /procesos/gsioper/DWH/r_solicitudes_clonadas.sh > /procesos/gsioper/DWH/proceso_cron_sol_clo.log
+0 8 * * * sh -x /procesos/gsioper/DWH/r_solicitudes_dth.sh > solicitudes_dth_dia.log
+0 22,2 * * * sh /procesos/gsioper/alarmas/depura_logs/Borra_LOGS.sh
+30 8 * * * sh -x /procesos/gsioper/DWH/r_informacion_sle.sh > informacion_sle.log
+30 8 * * * sh -x /procesos/gsioper/DWH/r_registros_arribo.sh > registros_arribo.log
+31 8 * * * sh -x /procesos/gsioper/DWH/r_saldos_quifatex.sh > saldos_quifatex_cron.logi
+#0 9 * * * sh /procesos/gsioper/DWH/reportes_chi/rrs_crea_susp_robo.sh
+41 16 * * * sh -x /procesos/gsioper/GSI/depura_FS_gsioper.sh > /procesos/gsioper/GSI/depura_FS_gsioper.log
+0 3 1 * * sh -x /procesos/gsioper/PortalExtraccion/Extraccion_Datos_Portal.sh AXIS "AXIS 2.1|AXIS 2.3|LISTA NEGRA|ADENDUM CONVENIOS|CATEGORIAS|CONTRATAR CICLOS|ESTATUS LINEAS|FEATURES|FONDO|FORMA PAGO|MEJOR AMIGO|NOMBRE CLIENTE|REPORTE GESTION|SERVICIOS CONTRATADOS|UBICACION|DISTRIBUCION|PREPAGO|FEATURES_PREPAGO|PLANES_PERSONALES_POST|FEATURES_DATOS_POST|POST|NOMBRE CLIENTE_20|NOMBRE CLIENTE_30|NOMBRE CLIENTE_40|NOMBRE CLIENTE_50" >/procesos/gsioper/PortalExtraccion/Extraccion_Datos_Portal.log 2>&1
+0 3 7 * * sh -x /procesos/gsioper/PortalExtraccion/Extraccion_Datos_Portal.sh AXIS "PRECALIFICADOS" >/procesos/gsioper/PortalExtraccion/Extraccion_Datos_Portal.log 2>&131 8 * * * sh -x /procesos/gsioper/DWH/r_registros_arribo.sh > /procesos/gsioper/DWH/registros_arribo.log
